@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Withdrawal</title>
+</head>
+<body>
+    <h2>Farmer Withdrawal Test</h2>
+    <form action="withdraw.php" method="POST">
+        <label for="farmer_id">Farmer ID:</label><br>
+        <input type="number" name="farmer_id" id="farmer_id" required><br><br>
+
+        <label for="amount">Amount to withdraw:</label><br>
+        <input type="number" step="0.01" name="amount" id="amount" required><br><br>
+
+        <button type="submit">Withdraw</button>
+    </form>
+</body>
+</html>
