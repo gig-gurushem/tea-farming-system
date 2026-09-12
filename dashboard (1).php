@@ -43,6 +43,7 @@ $withdraw_message = $_GET['msg'] ?? "";
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Dashboard - Tea Farmer Portal</title>
     <link rel="stylesheet" href="css/style.css">
 </head>

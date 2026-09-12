@@ -1,4 +1,4 @@
-* {
+git add . && git commit -m "Add responsive design" && git push* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -42,7 +42,7 @@ body {
     font-size: 14px;
     transition: background 0.2s;
 }
-.topbar a.logout:hover { background: rgba(255,255,255,0.35); }git config --global user.name "Shem"
+.topbar a.logout:hover { background: rgba(255,255,255,0.35); }
 
 /* ---------- Auth pages (login/register) ---------- */
 .auth-wrapper {
@@ -233,3 +233,85 @@ th, td {
 th { color: #6b8f6b; font-size: 12px; text-transform: uppercase; }
 
 .withdraw-form { max-width: 360px; }
+
+/* ---------- Responsive breakpoints ---------- */
+
+/* Tablets and small laptops */
+@media (max-width: 900px) {
+    .stats-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Phones */
+@media (max-width: 600px) {
+    .topbar {
+        padding: 14px 18px;
+    }
+    .topbar h1 {
+        font-size: 18px;
+    }
+    .topbar a.logout {
+        padding: 6px 12px;
+        font-size: 13px;
+    }
+
+    .auth-card {
+        padding: 26px 22px;
+        border-radius: 12px;
+        max-width: 100%;
+    }
+    .auth-card h2 {
+        font-size: 22px;
+    }
+
+    .dashboard-wrap {
+        margin: 16px auto;
+        padding: 0 14px;
+    }
+
+    .stats-row {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        margin-bottom: 20px;
+    }
+    .stat-card {
+        padding: 18px;
+    }
+    .stat-card .value {
+        font-size: 24px;
+    }
+
+    .tab-bar {
+        flex-direction: column;
+        gap: 4px;
+    }
+    .tab-btn {
+        padding: 10px;
+    }
+
+    .tab-content {
+        padding: 18px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .withdraw-form {
+        max-width: 100%;
+    }
+}
+
+/* Very small phones */
+@media (max-width: 360px) {
+    .auth-card {
+        padding: 20px 16px;
+    }
+    .field input, .field select {
+        padding: 10px 12px;
+        font-size: 13px;
+    }
+}
